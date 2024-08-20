@@ -19,3 +19,4 @@ Contents:
 16. Working of JavaScript
 17. Control Flow
 18. Loops and Iterations
+19. Document Object Model
