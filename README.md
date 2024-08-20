@@ -18,3 +18,4 @@ Contents:
 15. Immediately Invoked Function Expressions
 16. Working of JavaScript
 17. Control Flow
+18. Loops and Iterations
