@@ -1,6 +1,7 @@
 // Javascript Execution Context
-// It simply means that how a file will execute or run, that is created in JS
 
+// It simply means that how a file will execute or run, that is created in JS
+// Javascript is synchronus
 // JavaScript is a single-threaded, everything in JS is considered as a process
 
 /*
