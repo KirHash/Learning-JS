@@ -184,3 +184,72 @@ function newGame() {
 }
 
 ```
+
+## project 5
+
+```javascript
+
+// Generating a random color
+let changeColorInterval;
+
+const randomColor = function () {
+  const hexVal = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += hexVal[Math.floor(Math.random() * 16)];
+  }
+  return color;
+};
+
+// setInterval()
+const startChangingColor = function () {
+  function changeColor() {
+    document.body.style.backgroundColor = randomColor();
+  }
+  if (!changeColorInterval) {
+    changeColorInterval = setInterval(changeColor, 1000);
+  }
+  console.log('Color generation has started');
+};
+
+document.querySelector('#start').addEventListener('click', startChangingColor);
+
+//clearInterval()
+const stopChangingColor = function () {
+  clearInterval(changeColorInterval);
+  changeColorInterval = null;
+  console.log('Color generation has stopped');
+};
+
+document.querySelector('#stop').addEventListener('click', stopChangingColor);
+
+```
+
+## project 6
+
+```javascript
+
+const insert = document.getElementById('insert');
+
+window.addEventListener('keydown', (e) => {
+  insert.innerHTML = `
+
+  <div class = "color">  
+    <table>
+      <tr>
+        <th style="background-color: black">Key</th>
+        <th style="background-color: black">Keycode</th>
+        <th style="background-color: black">Code</th>
+      </tr>
+      <tr>
+        <td>${e.key === ' ' ? 'Space' : e.key}</td>
+        <td>${e.keyCode}</td>
+        <td>${e.code}</td>
+      </tr>
+    </table>
+  </div>
+
+  `;
+});
+
+```
