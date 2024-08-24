@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur Javascript</title>
+</head>
+<body>
+    <h1>Chai aur Javascript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // setInterval()
+    let repeatName;
+    const repeatFunction = function (str) {
+        console.log(str, "kirhash", Date.now());
+        
+    }
+    
+
+    document.querySelector('#start').addEventListener('click', function(){
+        repeatName = setInterval(repeatFunction, 2000, "hi");
+        console.log("The event has started");
+        
+    })
+
+    // clearInterval()
+    document.querySelector('#stop').addEventListener('click', function () {
+        clearInterval(repeatName);
+        console.log("The event has stopped");
+        
+    })
+
+    
+</script>
+</html>
