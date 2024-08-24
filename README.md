@@ -20,3 +20,4 @@ Contents:
 17. Control Flow
 18. Loops and Iterations
 19. Document Object Model
+20. Events
