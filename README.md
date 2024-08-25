@@ -22,3 +22,4 @@ Contents:
 19. Document Object Model
 20. Events
 21. Async
+22. Advanced: v8 Engine, API Request, Promise, Fetch
