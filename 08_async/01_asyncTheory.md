@@ -32,6 +32,18 @@ For example:
 
 ## fetch() API
 
-It works on task queue as well but for task queue has been expanded or streched to High Priority Queue
-fetch() is used for promises, which generally delays a task 
+It works on task queue as well but for task queue has been expanded or streched to High Priority Queue(Microtask Queue/ Fetch Queue) fetch() is used for promises, which generally delays a task 
+
+<img title = "Fetch" alt = "Fetch Mechanism" src = "fetch.png">
+
+fetch Mechanism works in two parts:
+1. Web browser/Node request handling
+    They send network request through broswser resource or node resource
+    Any response is sent to onFulfilled but if the response fails or gets stuck then it is sent to onRejection
+2. Variables and memory data space reservation
+    There are two arrays:
+    a. onFulfilled[] (resolve)
+    b. onRejection[] (reject)
+
+Initially the data's memory is empty and both these arrays contain functions. These functions are responsible for fulfilling the data. Once the data's memory gets fulfilled, the variable created "response" that is available in the Global memory gets fulfilled by the data
 
