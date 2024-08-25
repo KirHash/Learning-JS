@@ -11,9 +11,11 @@
 
 
 
-<img title = "Event Loop" alt = "Event and Async" src = "08_async\image.png">
 
-/*
+<img title = "Event Loop" alt = "Event and Async" src = "image.png">
+
+
+
 ## Event Loop
 
 Whenever we write async code, there should be a mechanism that may be remind to execute a async code later for the purpose.
