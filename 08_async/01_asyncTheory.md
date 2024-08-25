@@ -37,10 +37,10 @@ It works on task queue as well but for task queue has been expanded or streched 
 <img title = "Fetch" alt = "Fetch Mechanism" src = "fetch.png">
 
 fetch Mechanism works in two parts:
-1. Web browser/Node request handling
+1. Web browser/Node request handling:
     They send network request through broswser resource or node resource
     Any response is sent to onFulfilled but if the response fails or gets stuck then it is sent to onRejection
-2. Variables and memory data space reservation
+2. Variables and memory data space reservation:
     There are two arrays:
     a. onFulfilled[] (resolve)
     b. onRejection[] (reject)
