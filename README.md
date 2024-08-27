@@ -23,4 +23,5 @@ Contents:
 20. Events
 21. Async
 22. Advanced: v8 Engine, API Request, Promise, Fetch
-23. Prototype, prototypal behavior and prototypal inheritance
+23. OOP and Classes in JS
+24. Prototype, prototypal behavior and prototypal inheritance
