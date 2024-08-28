@@ -25,3 +25,4 @@ Contents:
 22. Advanced: v8 Engine, API Request, Promise, Fetch
 23. OOP and Classes in JS
 24. Prototype, prototypal behavior and prototypal inheritance
+25. Lexical Scope and Closures
