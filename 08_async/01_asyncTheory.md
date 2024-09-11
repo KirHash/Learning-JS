@@ -20,7 +20,12 @@
 
 Whenever we write async code, there should be a mechanism that may be remind to execute a async code later for the purpose.
 Such mechanisms are Web APIs/ Node APIs
-
+<br>
+The asynchronous program consists of Promises, which are resolved after the execution of the async program
+<br>
+The async keyword is accompanied by await keyword. The await keyword will resolve the promise after its task is completed.
+<br>
+<br>
 For example:
     Suppose a function calls setTimeout(), the call is transferred from JS engine(Call Stack) to Web API (which has access to setTimeout()).
     The setTimeout() is set to 2 seconds timeout of the function. 
